@@ -6,12 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 
-<body>
-    <h1>keshav manish vipin </h1>
 
-    <h3>hello world</h3>
+<body>
+    <div class="hello">
+        <h1 style="cursor: pointer;" class="heading" onclick="keshav()">keshav manish vipin </h1>
+    </div>
+
+
+
+    <script>
+        function keshav() {
+            const hello = document.querySelector(".hello");
+            const heading = document.querySelector(".heading");
+            const h2 = document.createElement("h2")
+            h2.textContent = "My name is keshav"
+            hello.appendChild(h2);
+            hello.removeChild(heading);
+        }
+    </script>
 </body>
 
 </html>
